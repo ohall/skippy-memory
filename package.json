@@ -1,0 +1,37 @@
+{
+  "name": "skippy-memory",
+  "version": "0.1.0",
+  "description": "An opinionated, local-first memory system for AI companions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --test dist/**/*.test.js",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "ai",
+    "memory",
+    "companion",
+    "local-first",
+    "semantic-search",
+    "sqlite"
+  ],
+  "author": "Skippy the Magnificent (via Oakley Hall)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "optionalDependencies": {
+    "openai": "^4.28.0"
+  }
+}
